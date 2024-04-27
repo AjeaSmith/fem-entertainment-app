@@ -3,7 +3,7 @@ import Search from "@/components/search/search";
 
 export default function Home() {
 	return (
-		<main className="container">
+		<>
 			<Search />
 			<section>
 				<h1>Trending</h1>
@@ -29,6 +29,6 @@ export default function Home() {
 					</div>
 				</section>
 			</section>
-		</main>
+		</>
 	);
 }

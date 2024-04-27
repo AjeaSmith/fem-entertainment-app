@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={`${outfit.className} layout__wrapper full-container`}>
 				<Header />
-				{children}
+				<main className="container">{children}</main>
 			</body>
 		</html>
 	);

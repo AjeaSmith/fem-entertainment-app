@@ -74,7 +74,7 @@ svg {
 	width: min(100% - 1rem * 2, 1336px);
 	margin-inline: auto;
 	@media (min-width: 768px) {
-		width: min(100% - 2.25rem * 2, 1336px);
+		width: min(100% - 1.563rem * 2, 1336px);
 	}
 }
 .layout__wrapper {
@@ -90,7 +90,7 @@ svg {
 }
 @media (min-width: 1240px) {
 	.layout__wrapper {
-		gap: 36px;
+		gap: 0;
 		grid-template-rows: auto;
 		grid-template-columns: auto 1fr;
 	}
