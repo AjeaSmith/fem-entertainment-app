@@ -1,5 +1,6 @@
 .form {
 	margin-bottom: 24px;
+	margin-inline: 1rem;
 	@media (min-width: 768px) {
 		margin-bottom: 33px;
 	}

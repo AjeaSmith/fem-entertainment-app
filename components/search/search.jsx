@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./search.module.css";
 export default function Search() {
 	return (
-		<form className={styles.form}>
+		<form className={`${styles.form}`}>
 			<span className={styles.search__wrapper}>
 				<Image
 					className={styles.search__logo}

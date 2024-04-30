@@ -12,9 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${outfit.className} layout__wrapper full-container`}>
+			<body className={`${outfit.className} layout__wrapper`}>
 				<Header />
-				<main className="container">{children}</main>
+				<main>{children}</main>
 			</body>
 		</html>
 	);
