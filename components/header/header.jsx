@@ -1,22 +1,21 @@
 "use client";
 import Image from "next/image";
-import styles from "./header.module.css";
+import "./header.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
 	const pathname = usePathname();
 	return (
-		<header className={`${styles.header}`}>
+		<header>
 			<Image
-				className={styles.header__img}
 				src={"/assets/logo.svg"}
 				width={33}
 				height={27}
 				alt="presentation"
 			/>
-			<nav className={styles.header__nav}>
-				<ul className={styles.header__links}>
+			<nav>
+				<ul>
 					<li>
 						<Link href="/">
 							<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +60,7 @@ export default function Header() {
 			</nav>
 
 			<Image
-				className={styles.header__user}
+				className="header__user"
 				src={"/assets/image-avatar.png"}
 				width={24}
 				height={24}

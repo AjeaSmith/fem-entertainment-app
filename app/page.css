@@ -1,45 +1,58 @@
 .trending {
-	.trending__heading {
+	h1 {
+		/* BOX MODEL */
 		margin-bottom: 1rem;
 		margin-inline: 1rem;
 	}
-	.trending__wrapper {
-		display: grid;
-		gap: 1rem;
+	& .trending__wrapper {
+		/* BOX MODEL */
 		padding-inline: 1rem;
+
+		/* LAYOUT PLACEMENT */
+		display: grid;
 		grid-auto-flow: column;
 		grid-auto-columns: minmax(70%, 470px);
+		gap: 1rem;
+
+		/* APPEARANCE */
 		overflow-x: auto;
 		overscroll-behavior-inline: contain;
 		scroll-snap-type: inline mandatory;
 		scroll-padding-inline: 1rem;
 		scroll-snap-align: start;
 
-		.trending__item {
-			border-radius: 8px;
+		& .trending__item {
 			display: grid;
 			grid-template-rows: min-content;
 			gap: 46px;
+
+			border-radius: 8px;
 		}
-		.trending__item button {
+		& button {
+			/* BOX MODEL */
+			width: 32px;
+			height: 32px;
+			padding: 0.5rem;
+			margin: 8px;
+			border: none;
+
+			/* LAYOUT PLACEMENT */
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 32px;
-			height: 32px;
-			border: none;
-			margin: 8px;
 			place-self: end;
+
+			/* APPEARANCE */
 			background-color: var(--blue-400);
-			padding: 0.5rem;
 			border-radius: 50%;
 		}
-		.trending__content {
+		& .trending__content {
 			position: relative;
 			padding: 1rem;
+
 			background: linear-gradient(to bottom, #0000 0%, rgba(0, 0, 0, 0.7) 100%);
 		}
-		.trending__subheading {
+		p {
 			opacity: 0.7;
 		}
 	}
@@ -50,6 +63,7 @@
 	@media (min-width: 768px) {
 		.trending__wrapper {
 			padding-inline: 25px;
+
 			gap: 2rem;
 			grid-auto-columns: minmax(65%, 470px);
 
@@ -68,8 +82,9 @@
 			margin-inline: 0;
 		}
 		.trending__wrapper {
-			grid-auto-columns: minmax(60%, 470px);
 			padding-inline: 0;
+			
+			grid-auto-columns: minmax(45%, 470px);
 
 			.trending__content {
 				padding: 24px;
