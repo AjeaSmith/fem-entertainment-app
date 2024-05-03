@@ -63,20 +63,6 @@ svg {
 	display: block;
 }
 
-.full-container {
-	width: min(100%, 1336px);
-	margin-inline: auto;
-	@media (min-width: 768px) {
-		width: min(100% - 1rem * 2, 1336px);
-	}
-}
-.container {
-	width: min(100% - 1rem * 2, 1336px);
-	margin-inline: auto;
-	@media (min-width: 768px) {
-		width: min(100% - 1.563rem * 2, 1336px);
-	}
-}
 @media (min-width: 768px) {
 	.layout__wrapper {
 		display: grid;
@@ -86,8 +72,12 @@ svg {
 }
 @media (min-width: 1240px) {
 	.layout__wrapper {
-		gap: 36px;
+		gap: 0;
 		grid-template-rows: auto;
-		grid-template-columns: auto 2fr;
+		grid-template-columns: 1fr;
+
+		main {
+			margin-left: 170px;
+		}
 	}
 }
